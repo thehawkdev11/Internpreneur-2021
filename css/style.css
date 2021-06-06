@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+/* INline Styling > ID > Class > tag names */
+
+/* There are two ways to specify colors in CSS
+1. rgb() ---> values of each parameter lies between 0-255
+2. hexcode ---> Hex code consists six digits --> Hexadecimal number system ---> 00 -> R , 00 -> G, 00 -> B
+--> 00 - FF
+*/
+
+/* FONTS */
+/* body{
+    font-family: 'Roboto', sans-serif; 
+}
+
+.heading{
+    background-color: aquamarine;
+}
+
+.red-para{
+    color: rgb(255,0,0); 
+    font-size: 50px;
+}
+
+.blue-para{
+    color: #000000;
+} */
+
+/* a[href $= ".in/"]{
+    color:red;
+}
+
+
+p.para{
+    box-sizing: border-box;
+    color:coral;
+    border:blue solid 5px;
+    padding: 70px;
+    margin-top:40px;
+    width:500px;
+    background-color: lightblue;
+}
+
+
+
+section.my-article{ 
+    color:blue;
+}
+
+header ol li a{
+    color:chartreuse;
+}
+
+header > p{
+    background-color: crimson;
+}
+
+section+p{
+    background-color: blueviolet;
+
+}
+
+.heading{
+    border: 5px solid red;
+    padding:10px;
+    width:500px;
+    height: 20px;
+    margin: 0px auto;
+    text-align: right;
+}
+
+a.link{
+    border : 2px solid blue;
+    display:block;
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+} */
+
+
+/* ################ DAY - 8 ################# */
+
+/* .para:hover{
+    color: crimson;
+    background-color: lightblue;
+    border: 5px solid crimson;
+}
+
+h1{
+    text-decoration: overline red;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+/* PSEUDO CLASSES */
+/* 1. LINK RELATED */
+a:link{
+    color: seagreen;
+}
+
+a:visited{
+    color: tomato;
+}
+
+a:hover{
+    color: brown;
+}
+
+a:active{
+    color: black;
+} */
+
+/* Other Pseudo classes */
+
+/* p:first-child{
+    color: green;
+} */
+
+/* p:first-of-type{
+    color: red;
+} */
+
+/* p:last-child{
+    color: blue;
+} */
+
+p:last-of-type{
+    color: blue;
+} 
+
+/* p:nth-child(2){
+    color: brown;
+} */
+/* 
+p:nth-of-type(2){
+    color: crimson;
+} */
+
+/* :root{
+    background: crimson;
+}
+
+html{
+    background: darkblue;
+} */
+/* header :not(p){
+    color: darkblue;
+}
+
+div:empty{
+    height: 100px;
+    width: 100px;
+    background-color:blue;
+} */
+
+/* ############# Day - 9 ############# */
+
+/* PSEUDO ELEMENTS */
+/* p::first-letter{
+    font-size: 30px;
+} */
+
+/* p::first-line{
+    font-size: 30px;
+} */
+
+/* ::selection{
+    background: black;
+    color: cornsilk;
+}  */
+
+/* h1::before{
+    content: "This is ";
+    color: green;
+} */
+
+
+/* CSS FLOAT */
+
+/* .container{
+    border: 10px solid green;
+}
+
+.academics , .co-curricular, .extra-curricular, .hobbies{
+    width: 25%;
+    height: 200px;
+    float: right;
+    text-align: center;
+}
+
+.academics{
+    background-color: lightsalmon;
+}
+.co-curricular{
+    background-color: lightgreen;
+}
+.extra-curricular{
+    background-color: lightblue;
+}
+.hobbies{
+    background-color: lightpink;
+}
+
+.container::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.container-2{
+    border: 10px solid red;
+    width: 600px;
+}
+
+.container-2 h2{
+    border: 2px solid green;
+}
+
+p.short{
+    background-color: khaki;
+    position: sticky;
+    top: 0;
+    z-index: -1;
+    
+}
+
+.container-2 p{
+    border: 2px solid purple;
+    background-color:sandybrown;
+} */
+
+
+/* ############## DAY _ 10 ################## */
+/* 1 inch ---> 96px */
+/* 1 inch ---> 2.54 cm  */
+/* point 1 pt ---> 0.75px*/
+/* 16pt ---> 12px */
+/* % */
+/* rem */ 
+/* p{
+    font-size: 16px; 
+    width: 500px;
+
+}
+
+
+.container{
+    border: 5px solid black;
+}
+
+div.container h2{
+    border: 5px solid red;
+}
+
+div.container{
+    height: 150px;
+    width: 50%;
+    margin: 5px auto ;
+} */
+
+/* h2{
+    width: 50%;
+    margin: auto;
+} */
+
+/* html{
+    font-size: 32px;
+}
+
+
+p{
+    font-size: 1em;
+} */
+
+.row{
+    display: flex;
+    width: 100%;
+}
+
+.row::after{
+    display: block;
+    clear: both;
+    content:"";
+}
+
+.col-1{ width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+
+:root{
+    font-size: 20px;
+}
+
+body{
+    font-size:25px; 
+}
+
+div.container{
+    font-size: 2rem; 1 em --> 25px
+}
+
+h2{
+    font-size: 1rem; 1em --> 50px
+}

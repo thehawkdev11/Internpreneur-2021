@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* TOP HEADER CSS */
+
+header.top-header{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url('../images/header-bg.jpg');
+    background-size: cover;
+    height: 600px;
+}
+
+header.top-header nav ul li{
+    float: left;
+    list-style: none;
+    font-size: 23px;
+    letter-spacing: 2px;
+    padding: 20px;
+}
+
+header.top-header nav ul li a{
+    text-decoration: none;
+    color: azure;
+}
+
+
+header.top-header nav ul li.right{
+    float:right;
+}
+
+nav ul::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+
+header.top-header nav ul li a.button{
+    background-color: azure;
+    color: black;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+
+header.top-header nav ul li a:hover{
+    color: lightseagreen;
+}
+
+header.top-header nav ul li a.button:hover{
+    color: lightseagreen;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+div.container {
+    color: azure;
+    text-align: center;
+    margin-top: 150px;
+}
+
+div.container h1{
+    font-size: 50px;
+}
+
+div.container p.content{
+    color: lightseagreen;
+    font-size: 25px;
+}
+div.container a.button{
+    display: inline-block;
+    text-decoration: none;
+    background-color: azure;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+div.container a.button:hover{
+    color: lightseagreen;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ABOUT ME CSS */
+
+section.about-me{
+    margin-top: 15px;
+    text-align: center;
+}
+
+section.about-me div.about-container div.matter,section.about-me div.about-container div.vector-img{
+    width: 50%;
+    float: left;
+    font-size: 25px;
+}
+
+div.about-container::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+
+div.about-container div.matter{
+    margin-top: 15px;
+    text-align: left;
+}
+
+div.matter p{
+    padding: 10px;
+}
+
+div.matter a.button{
+    display: inline-block;
+    text-decoration: none;
+    background-color: azure;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+div.matter a.button:hover{
+    color: lightseagreen;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+div.another-one div.parts{
+    width: 25%;
+    float: left;
+}
+
+div.another-one::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+
+div.parts {
+    font-size: 25px;
+}
+div.parts p.sub-heading{
+    color: orangered;
+}
+
+div.parts p.content{
+    margin: 5px;
+}

@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+}
+
+header.top-header{
+    height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url('../images/header-bg.jpg');
+    background-size: cover;
+
+}
+
+header.top-header nav{
+    text-align: center;
+    padding: 5px;
+}
+
+header.top-header nav ul li{
+    padding: 25px;
+    font-size: 20px;
+    list-style:none;
+    float: left;
+}
+header.top-header nav ul li.right{
+    float: right;
+}
+
+nav::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+
+header.top-header nav ul li a{
+    text-decoration: none;
+    color: azure;
+    letter-spacing: 2px;
+}
+
+header.top-header nav ul li a.button{
+    background-color: azure;
+    color: black;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+header.top-header nav ul li a.button:hover{
+    color: lightseagreen;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header.top-header nav ul li a:hover{
+    color: lightseagreen;
+}
+
+
+header.top-header .container{
+    text-align: center;
+    font-size: 25px;
+    color: azure;
+    vertical-align: middle;
+    margin-top: 120px
+}
+
+header.top-header .container p{
+    color: lightseagreen;
+    margin: 10px;
+}
+
+
+header.top-header div.container a.button{
+    background-color: azure;
+    color: black;
+    padding: 15px;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+header.top-header div.container a.button:hover{
+    color: lightseagreen;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* About Section CSS */
+
+section.about{
+    text-align: center;
+    padding: 25px;
+}
+
+.about-container div.matter,div.vector-img{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.about-container::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+
+div.matter{
+    margin-top: 20px;
+    font-size: 25px;
+    padding: 20px;
+    text-align: left;
+}
+
+.about-container div.matter a.button{
+    background-color: azure;
+    color: black;
+    padding: 15px;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.about-container div.matter a.button:hover{
+    color: lightseagreen;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+div.menu div.parts{
+    width: 25%;
+    float: left;
+}
+
+div.menu::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+
+
+div.menu div.parts .sub-heading{
+    color: orangered;
+    font-size: 28px;
+    margin: 10px;
+}
+
+div.menu div.parts .content{
+    font-size: 23px;
+}
+
+a.link{
+    display: inline-block;
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+    margin: 5px;
+}
+
+a.link:hover{
+ color: lightseagreen;
+}
+
+/* WHY ME CSS */
+hr{ width: 99%;}
+section.why-me{
+    text-align: center;
+    margin: 20px;
+}
+
+.why-me .why-container .vector-art,.why-me .why-container .why-me-matter {
+    width: 50%;
+    float: left;
+}
+
+.why-container::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.why-container{
+    margin-top: 20px;
+    font-size: 25px;
+    padding: 20px;
+    text-align: left;
+}
+
+.why-me-matter{
+    text-align: center;
+    margin-top: 150px;
+}
+
+.why-me-matter a.button{
+    background-color: azure;
+    color: black;
+    padding: 15px;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+a:hover{
+    color: lightseagreen;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Contact Me CSS */
+
+.contact-me{
+    text-align: center;
+    background-color: lightsteelblue;
+}
+
+.contact-me h2{
+    color: black;
+}
+
+.contact-img, .contact-details{
+    width: 50%;
+    float: left;
+}
+
+.contact-container::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.contact-details{
+    margin-top: 50px;
+    text-align: left;
+    font-size: 30px;
+}
+
+.contact-details ul{
+    margin: 10px;
+}
+
+.button-2{
+    background-color: azure;
+    color: black;
+    padding: 15px;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px;
+}

@@ -1,0 +1,21 @@
+
+div.container{
+    width: 700px;
+    margin: 5px auto;
+}
+
+ul{
+    width: 300px;
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+}
+
+ul li{
+    margin: 10px;
+    font-size: 25px;
+}
+
+ul li:hover{
+    color: blue;
+}

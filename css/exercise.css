@@ -1,0 +1,86 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 0;
+}
+
+header nav{
+    background-color: blue;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 25px;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.para{
+    margin: 5px;
+    padding: 15px;
+    width: 500px;
+    display: inline-block;
+    border: 2px solid blue;
+}
+
+.todo{
+    width: 500px;
+    margin : 5px auto;
+    text-align: center;
+}
+
+.lists{
+    width: 500px;
+    display: inline-block;
+    list-style:none;
+    text-align: center;
+}
+
+.lists li{
+    padding: 10px;
+}
+
+.form-container{
+    background-color: blue;
+}
+
+.contact-form{
+    width: 500px;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.contact-form form input, textarea{
+    width: 230px;
+    margin: 10px;
+    background-color: whitesmoke;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.para:hover{
+    background-color: lightblue;
+}
+
+.lists li:hover{
+    color: blue;
+}
