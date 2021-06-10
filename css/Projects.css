@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* CSS RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Changing Font  */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: lightgrey;
+}
+
+/* Block Section */
+
+section.header{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) , url('../images/projects-bg.jpg');
+    background-size: cover;
+    background-position-y: center;
+}
+section.header div.container{
+    height: 250px;
+    text-align:center;
+    color: azure;
+    padding-top: 100px;
+}
+div.container h2{
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+div.container a.home{
+    text-decoration: none;
+    color: lightseagreen;
+}
+
+/* Projects Section */
+section.my-projects{opacity: 1;}
+section.my-projects div.container{
+    width: 60%;
+    margin: 50px auto;
+}
+
+section.my-projects div.container:hover{
+    box-shadow: 3px 3px gray;
+}
+
+section.my-projects div.container div.img{
+    width: 25%;
+    background-color: orangered;
+    float: left;
+    height:200px;
+}
+
+section.my-projects div.container div.matter{
+    width: 75%;
+    float: left;
+    background-color: azure;
+    color:black;
+    height: 200px;
+    padding: 20px;
+}
+
+section.my-projects div.container::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.project-heading{
+    color: orangered;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    border-bottom: 2px solid lightseagreen;
+}
+/* RESPONSIVE CSS */
+
+@media (max-width:500px) {
+    section.my-projects div.container{
+        width: 90%;
+        margin: 15px auto;
+    }
+    section.my-projects div.container div.img{
+        width: 100%;
+        float: none;
+    
+    }
+
+    section.my-projects div.container div.img img{
+        width: 100%;
+    }
+
+    section.my-projects div.container div.matter{
+        width: 100%;
+        float: none;
+    }
+}

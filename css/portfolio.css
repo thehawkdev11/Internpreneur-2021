@@ -44,6 +44,9 @@ header.top-header nav ul li a{
     letter-spacing: 2px;
 }
 
+header.top-header nav ul li.dropDownIcon{
+    display: none;
+}
 header.top-header nav ul li a.button{
     background-color: azure;
     color: black;
@@ -258,3 +261,92 @@ a:hover{
     text-decoration: none;
     margin: 10px;
 }
+
+/* RESPONSIVE CSS */
+
+@media (max-width: 500px) {
+    header.top-header{
+        
+        height: 50vh;
+        background-size: cover;
+        background-position-x: right;
+
+    }
+    header.top-header div.container h1{
+        font-size: 25px;
+    }
+    header.top-header div.container p{
+        font-size: 20px;
+    }
+    header.top-header div.container a.button{
+        font-size: 16px;
+    }
+    
+    header.top-header nav ul li{
+        display: none;
+    }
+    header.top-header nav ul li.dropDownIcon{
+        display: block;
+        position: absolute;
+    }
+
+    header.top-header nav ul.topnav.responsive{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 1);
+        width: 100vw;
+        height: 50vh;
+        padding: 10px;
+    }
+
+    header.top-header nav ul.topnav.responsive li.dropDownIcon{
+        float: left;
+    }
+
+    header.top-header nav ul.topnav.responsive li{
+        display: block;
+        float:none;
+    }
+    .about-container div.matter,div.vector-img{
+        width: 100%;
+        text-align: center;
+    }
+    div.vector-img img{
+        width: 80vw;
+        height: 40vh;
+        margin: 0;
+        padding: 0;
+    }
+    div.menu div.parts{
+        width: 100%;
+    }
+
+    .why-container{padding: 0;}
+    .why-me-matter{margin: 0;}
+
+    .why-me .why-container .vector-art,.why-me .why-container .why-me-matter {
+        width: 100%;
+    }
+
+    .why-me .why-container .vector-art img{
+        width: 90vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-img, .contact-details{
+        width: 100vw;
+    }
+
+    .contact-img img{
+        width: 100vw;
+    }
+
+    .contact-details{
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+

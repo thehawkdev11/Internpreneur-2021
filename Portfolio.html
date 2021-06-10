@@ -1,3 +1,7 @@
+<!-- 
+    vw , vh -- viewport-width, viewport-height (0-100)
+    50vw 
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,20 +9,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="/css/portfolio.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
 </head>
 <body>
     <!-- HEADER -->
     <header class="top-header">
         <nav>
-            <ul>
-                <li><a href="">Projects</a></li>
+            <ul class="topnav" id="dropdownClick">
+                <!-- <li class="dropDownIcon"><a href="javascript:void(0)" onclick="dropDown()">	
+                    &#9776</a></li> -->
+                <li class="dropDownIcon"><a href="javascript:voi d(0)" onclick="dropDown()">&#9776</a></li> 
+                <li><a href="./Projects.html">Projects</a></li>
                 <li><a href="">Github</a></li>
                 <li><a href="">Resume</a></li>
-                <li class="right"><a class="button" href="">Contact</a></li>
+                <li class="right"><a class="button" href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="container">
+        <div class="container" id="hide">
             <h1>I am Mohd Abdul Khadar</h1>
             <p>Front End Developer | Electronics Engineer | Pythonista</p>
             <a href="" class="button">
@@ -67,7 +74,7 @@
                     <img src="./images/analysis.png" width="100" height="100" alt="statistics">
                     <p class="sub-heading">EC Projects</p>
                     <p class="content">As I am an Electronics and Communication student apart from Web and Software projects I have got couple of EC projects.</p>
-                    <a href="" class="link">See More</a>
+                    <a href="./Projects.html" class="link">See More</a>
                 </div>
             </div>
         </div>
@@ -75,7 +82,7 @@
     <!-- Why me section -->
     
     <section class="why-me">
-        <hr>
+        <hr> 
         <br>
         <h2>Why me ??</h2>
         <div class="why-container">
@@ -85,12 +92,12 @@
             <div class="why-me-matter">
                 <p>Instead of explaining why to hire me, Just wanna show how my code(s) look in case of Software development as " Code Speaks " and in case of Electronics engineering we all know Software works but hardware rocks!! <br> Have a look on both Github and EC Projects Section :</p>
                 <a class="button" href="">Github</a>
-                <a class="button" href="">EC Projects</a>
+                <a class="button" href="./Projects.html">EC Projects</a>
             </div>
         </div>
     </section>
     <!-- Contact Me -->
-    <section class="contact-me">
+    <section class="contact-me" id="contact">
         <br>
         <h2>Contact ME!</h2>
         <div class="contact-container">
@@ -109,5 +116,21 @@
             </div>
         </div>
     </section>
+
+
+    <script>
+        function dropDown() {
+            var x = document.getElementById("dropdownClick");
+            if(x.className === "topnav"){
+                x.className += " responsive";
+                console.log("Navbar is Open");
+            }
+            else{
+                x.className = "topnav";
+                console.log("Navbar is Closed");
+            }
+        }
+    </script>
+
 </body>
 </html>
