@@ -1,0 +1,69 @@
+/* div.box{
+    width: 200px;
+    height: 15px;
+    margin: 5px;
+    background-color: lightblue;
+    animation-name: sound-effect;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+    animation: change-bg 5s forwards 2s 3 ease-in; 
+} */
+/* div.odd-box{
+    width: 200px;
+    height: 15px;
+    background-color: lightblue;
+    display: inline-block;
+    margin: 5px;
+    animation-name: sound-effect;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+    /* animation: change-bg 5s forwards 2s 3 ease-in;
+} */
+
+/* @keyframes sound-effect {
+    0%{
+        width: 60px;
+    }
+    25%{
+        width: 100px;
+    }
+    50%{
+        width: 140px;
+    }
+    75%{
+        width: 180px;
+    }
+    100%{
+        width: 200px;
+    }
+} */
+
+
+/* Transitions *//* Transforms */
+div.container{
+    width: 50%;
+    margin: 20px auto;
+}
+div.box{
+    height: 100px;
+    width: 100px;
+    margin: 5px auto;
+    background-color: lightskyblue;
+    /* transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out; */
+    transition: all 1.5s ease-in-out;
+}
+
+div.box:hover{
+    /* background-color: orange;
+    width: 150px; */
+    /* transform: translate(-50px,-50px); */
+}
+

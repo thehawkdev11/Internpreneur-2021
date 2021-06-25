@@ -1,0 +1,7 @@
+header nav.navbar{
+    background-color: purple!important;
+}
+
+.navbar-brand,.navbar-nav{
+    padding: 5px;
+}

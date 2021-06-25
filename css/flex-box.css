@@ -6,13 +6,18 @@
 
 div.wrapper{
     border: 5px solid black;
+    /* height: 600px; */
     display: flex;
-    /* flex-direction: column; */
-    flex-wrap: wrap-reverse;
+    /* flex-wrap: wrap; */
+    /* flex-direction:row; */
+    justify-content: center;
+    /* align-items: center; */
+    /* align-content: flex-start; */
 }
 
 .box{
-    width: 500px;
+   width:500px;
+   border-left: 2px solid black;
 }
 
 div.box-1{
